@@ -27,7 +27,7 @@ public class JwtTokenService {
                         .getBytes(StandardCharsets.UTF_8)
         );
     }
-    private String generateToken(User user ){
+    public String generateToken(User user ){
         return Jwts.builder()
                 .setSubject(user.getId().toString())
                 .claim("role",user.getRole())

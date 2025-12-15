@@ -1,4 +1,11 @@
 package com.fgal.authservice.dto.response;
 
-public class TokenResponse {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class TokenResponse
+{
+    private String accessToken;
 }
